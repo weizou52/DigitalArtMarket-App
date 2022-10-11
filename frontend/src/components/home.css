@@ -1,0 +1,13 @@
+ 
+.h-head{
+    display: flex;
+    margin-top: 100px;
+    padding: 30px 42px;
+}
+.h-container{
+    display: flex;
+    gap:20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: center;
+}

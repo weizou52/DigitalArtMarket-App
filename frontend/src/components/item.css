@@ -1,0 +1,61 @@
+.i-container{
+    width:25vw;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 5px 10px
+}
+.i-dis{
+    padding: 20px 10px 20px 10px;
+   display: flex;
+   justify-content: space-between;
+}
+.i-image{
+    width: 100%;
+    height:20vw;
+    object-fit: cover;
+}
+.i-price{
+    display: flex;
+    gap:5px;
+    align-items: center;
+    font-weight: 800;
+}
+.buy{
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    background-color: #2081e2;
+    bottom:-40px;
+    color: white;
+    font-weight: 900;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+}
+.i-container:hover>.buy{
+    bottom: 0px;
+    transition: 0.3s ease-in-out;
+ 
+}
+.loading {
+    border: 4px solid #ffffff; /* Light grey */
+    border-top: 4px solid #2081e2; /* Blue */
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+.n-pricebar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

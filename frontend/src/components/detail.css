@@ -1,0 +1,20 @@
+.d-container{
+    margin-top: 80px;
+    width: 60vw;
+    margin: 10px auto;
+}
+.d-imgContainer{
+    margin-bottom: 20px;
+}
+.d-textcontainer{
+    width: 60vw;
+}
+.d-img{
+    width: 100%;
+    height:30vw;
+    object-fit: cover;
+}
+.d-container >div > strong{
+    font-size: 1.3rem;
+}
+
