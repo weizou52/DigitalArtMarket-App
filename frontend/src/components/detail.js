@@ -4,30 +4,28 @@ import { getDetail } from "../actions";
 import Navbar from "./navbar";
 import ape from "./sky.png";
 import './detail.css'
+import { useParams } from "react-router-dom";
 
 
-const Detail = ({id})=>{
-    // const [product, setProduct]=useState({})
-    // useEffect(()=>{
-    //     getDetail(id).then(res=>{
-    //         setProduct(res)
-    //     })
-    // },[])
+const Detail = (props)=>{
+    const {id}=useParams()
+    const [item, setItem]=useState(null)
+    useEffect(()=>{getDetail(id,setItem)},[])
     return (
         <div className="detail">
             <Navbar />
-            <div className="d-container">
-                <div className="d-imgContainer"><img src={ape} className="d-img" /></div>  
-                <div className="d-textcontainer">
-                    <h1>Title</h1>
-                    <div>By <strong>Jess</strong></div>
-                    <div>Angry cat is a cultural identity. A clean collection of 10,000 different cats to build an interesting brand and cat-city.</div>
-                    <div><strong>Price:</strong> $0.035</div>
-                </div>       
-            </div>
+            {
+                item && <div className="d-container">
+                            <div className="d-imgContainer"><img src={item.image} className="d-img" /></div>  
+                            <div className="d-textcontainer">
+                                <h1>{item.title}</h1>
+                                <div>By <strong>{item.user}</strong></div>
+                                <div>{item.description}</div>
+                                <div><strong>Price:</strong> {item.price}</div>
+                            </div>       
+                        </div>
+            }
             
-            
-
         </div>
     )
 }

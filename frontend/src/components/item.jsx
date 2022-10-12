@@ -19,7 +19,7 @@ function Item({item}){
     const publicKey='pk_test_51L7WF3CZN6gSvltzE15wWD4mdx3smWiuLBQlr0KZlQT6CrFZoOgMFpUD9nTldON0fNr5ZxHb8tzoa4R5yG45wb8d00KMP7RteU'
     const handleCheckout = (token)=>{
 
-        axios.post("/order/checkout/", {token:token},{headers:{Authorization: 'JWT '+ localStorage.getItem('JWT')}}).then(
+        axios.post("/order/checkout/", {token:token, id:item.id},{headers:{Authorization: 'JWT '+ localStorage.getItem('JWT')}}).then(
             res=>{console.log('Success!')}
         ).catch(e=>{
             if(e.response.status===401){
@@ -30,7 +30,7 @@ function Item({item}){
 
     return (
     <div className="i-container">
-        <img src={item.img} alt="" className="i-image" onClick={()=>{history.push(`/item/${item.id}`)}}/>
+        <img src={item.image} alt="" className="i-image" onClick={()=>{history.push(`/item/${item.id}`)}}/>
         <div className="i-dis">
             <div style ={{ fontWeight:900}}> 
             {item.title}
