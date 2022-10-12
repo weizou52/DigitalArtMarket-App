@@ -12,6 +12,10 @@ Payment Page:
 <img width="1440" alt="Screen Shot 2022-10-11 at 5 39 47 PM" src="https://user-images.githubusercontent.com/106004886/195214504-279f001b-e038-4e9f-b32f-be09eac769a6.png">
 
 
+Detail Page:
+<img width="1440" alt="Screen Shot 2022-10-12 at 2 17 10 AM" src="https://user-images.githubusercontent.com/106004886/195275892-c1c14ea3-8d0a-492f-884f-e620f166cf33.png">
+
+
 
 Post Page:
 
