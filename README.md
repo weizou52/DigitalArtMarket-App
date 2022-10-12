@@ -1,5 +1,5 @@
 # NFT-Marketplace-App
-A simplified Web App which supports NFT posting and trading.
+A simplified Web App which supports NFT posting and trading. This demo is only for test. Pictures/items are from https://opensea.io/ and are not intended for public use. 
 
 Home Page:
 
