@@ -7,7 +7,7 @@ from .models import post
 from .serializer import orderserializer, postserializer
 import stripe
 
-secretKey ='sk_test_51LraUnEa6cgmx7JecQFATtvsq1tpCViuptOx1kRogSHDYPcvhz6R53jiBvTH0Q1JsbuSUdmhkcJChbiBPfXiqlGJ008Tr3XZoP'
+
 
 # Create your views here.
 class getall(APIView):
