@@ -16,7 +16,7 @@ function Item({item}){
     const [loading, setLoading]=useState(false)
     const myrefrence=createRef()
     const delay = ms => new Promise(res => setTimeout(res, ms));
-    const publicKey='pk_test_51L7WF3CZN6gSvltzE15wWD4mdx3smWiuLBQlr0KZlQT6CrFZoOgMFpUD9nTldON0fNr5ZxHb8tzoa4R5yG45wb8d00KMP7RteU'
+  
     const handleCheckout = (token)=>{
 
         axios.post("/order/checkout/", {token:token, id:item.id},{headers:{Authorization: 'JWT '+ localStorage.getItem('JWT')}}).then(
